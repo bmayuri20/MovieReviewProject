@@ -35,8 +35,3 @@ build/
 ### ENV FILES ###
 .env
 
-# Java
-*.class
-*.jar
-*.war
-target/

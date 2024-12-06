@@ -25,7 +25,7 @@ public class MovieController {
     }
  */
     @GetMapping("/{imdbId}")
-    public ResponseEntity<Optional<Movie>> getSingMovie(@PathVariable String imdbId){
+    public ResponseEntity<Optional<Movie>> getSingleMovie(@PathVariable String imdbId){
         return new ResponseEntity<Optional<Movie>>(movieService.singleMoviebyimdb(imdbId), HttpStatus.OK);
     }
 
